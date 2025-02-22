@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Greeting</title>
+    <script>
+        function greetUser() {
+            let name = document.getElementById("name").value;  //<!-- (1) Fill in the blank -->
+            if (name === "") {
+                alert("Please enter your name!");
+            } else { //<!-- (6) Fill in the blank -->
+                document.getElementById("greeting").innerHTML = "Hello, " + name + "!";  //<!-- (2) Fill in the blank -->
+            }
+        }
+    </script>
+</head>
+<body> <!-- (7) Fill in the blank -->
+    <h2>Welcome to the Interactive Greeting Page!</h2>
+    <p>Enter your name below and click the button to receive a greeting.</p>
+
+    <input type="text" id="name" placeholder="Enter your name">  <!-- (3) Fill in the blank -->
+    <button onclick="greetUser()">Click Me</button>  <!-- (4) Fill in the blank -->
+
+    <p id="greeting"></p>  <!-- (5) Fill in the blank -->
+</body>
+</html>
